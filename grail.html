@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<link rel="stylesheet" href="./tachyons.css" />
+<style>
+.flex-b5 { flex: 0 0 5rem }
+.flex-b15 { flex: 0 0 15rem }
+</style>
+
+<body class="flex min-vh-100 flex-column">
+  <header class="flex-b5 bg-black white">Header</header>
+  <div class="flex flex-auto flex-column flex-row-l">
+    <div class="order-last-m order-last-l flex flex-auto flex-column flex-row-m flex-row-l">
+      <main class="flex-auto bg-black-10">content here</main>
+      <aside class="order-last flex-b15 bg-black-20">sidebar</aside>
+    </div>
+    <nav class="flex-auto order-last order-0-l flex-b15 bg-black-20">nav</nav>
+  </div>
+  <footer class="flex-b5 bg-black white tc">Footer</footer>
+</body>
